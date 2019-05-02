@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reconnaissance faciale</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+      
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+     
+    </head>
+<body >
+        
+    <div class="jumbotron">
+        <h2 class="display-4">Reconnaissance faciale </h2>
+    <p class="lead">démo </p>
+    </div>
+<div class="container">
+
+    <div class="row "> 
+            <div class="col-12 col-md-8"><div  class="card text-white bg-primary  text-center"  >
+                    <div class="card-header" >vidéo </div>
+                  <div  class="card-body bg-primary"> <img class="img-fluid" src="{{ url_for('video_feed') }}"></div></div></div>
+            <div class="col-6 col-md-4"><div  class="card text-white bg-primary  text-center"  >
+                    <div class="card-header" >Infos </div>
+                  <div  class="card-body bg-primary" >La reconnaissance faciale a été développée en python en s'appuyant sur la librairie Dlib. Grâce à une modèle pré-entrainé, elle permet de reconnaitre les visages des personnes enregistrées dans l'application, en utilisant 68 points de repère du visage. 
+                   
+                  </div></div></div>
+
+        
+          
+           
+                    
+        
+        </div>
+
+    <!-- Footer -->
+<footer class="footer">
+     <div class="container-fluid bg-primary text-center fixed-bottom">
+        <span class="text-muted"> © 2018 
+    <a href=""> Jérémy DENIS</a></span>
+      </div>
+</footer>
+<!-- Footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+
+</body>
+</html>
+
